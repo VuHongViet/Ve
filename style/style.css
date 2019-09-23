@@ -1,0 +1,45 @@
+
+.obj{
+    color: red;
+     cursor: pointer;
+     position: relative;
+    width: 100%;
+    padding: 10px 0px;
+	background-color: white;
+    border: 1px solid #F5F5F5;
+	border-radius: 40px;
+	box-shadow: 0 0 1px grey;
+}
+.arr{
+    color:#00CCFF;
+}
+.arr, .arr>div, .obj>div:not(.arr){
+    padding-left:20px;
+}
+.arr>div, .arr>.obj>div:not(.arr){
+    color:#0000AA	;
+}
+.key{
+    color: #0000EE;
+}
+.obj-main,.key{
+    font-weight: bold;
+    font-size: 20px;
+}
+.obj-main{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.obj:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -25px;
+	top: -5px;
+  border: 6px solid transparent;
+  border-right: 32px solid rgb(193,193,193); /* IE8 Fallback */
+  border-right: 32px solid rgba(193,193,193,0.5);
+  z-index: 2;
+  transform: rotate(45deg);
+}
